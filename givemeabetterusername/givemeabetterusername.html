@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <!-- This is the title -->
+    <head>
+        <!-- This gets the font type -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <title> Practice HTML & CSS Page </title>
+        <!-- This puts the font at the first heading -->
+        <!-- If the 'div' sentence is hovered over, the text will show as a salmon color -->
+        <style type="text/css">
+            h1 {
+                font-family: "Sofia", sans-serif;
+
+            }
+
+            a {
+                font-weight: bold;
+            }
+
+            #trythis {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 1.2em;
+                color: powderblue;
+                font-weight: bold;
+
+            }
+
+            div:hover {
+                color: salmon;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- This is a Navbar -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">A Logo Would Be Here</a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.artstation.com/artwork/nLY0K">Fenske's Art</a>
+                </li>
+              </ul>
+        </nav>
+
+        <h1> This Is A Heading </h1>
+            <p> This is a paragraph. </p>
+            <div> This is a div. </div>
+            <p> This is a <span id="trythis">blue</span> word. </p>
+            <!-- This is a line break -->
+            <br>
+            <ul>
+                <li> This is a list. </li>
+                <li> This is a <strong> word </strong>. </li>
+                <li> This is an <em> emphasized/italicized </em> word. </li>
+            </ul>
+
+            <ol>
+                <li> This is an ordered list. </li>
+                <li> If you add start at the beginning, you can choose which number to start from. </li>
+            </ol>
+
+            <!-- This is a button from Bootstrap -->
+            <!-- It leads to the website of the Untitled Goose Game -->
+            <!-- It would be fun to make a 'honk' noise here in the future when the button is pressed -->
+            <a href="https://goose.game/" class="btn btn-danger" role="button">Peace Was Never An Option</a>
+
+            <br>
+            <br>
+            <!-- This is a Flex box -->
+            <!-- They are forced into equal widths using flex-fill -->
+            <div class="d-flex">
+                <div class="p-2 bg-info flex-fill">This is</div>
+                <div class="p-2 bg-warning flex-fill">a</div>
+                <div class="p-2 bg-info flex-fill">Flex Box</div>
+              </div>
+            
+            <!-- This was added to switch more to a CSS style -->
+            <table style="width: 90%; border: 2px;">
+                <tr>
+                    <th> Table </th>
+                    <th> Header </th>
+                </tr>
+                <tr>
+                    <td> Cell </td>
+                    <td> Block </td>
+                </tr>
+            </table>
+            <p> It lacks the borders and lines, but that can be changed later. </p>
+
+            <hr>
+
+            <img src="https://cdnb.artstation.com/p/assets/images/images/004/811/399/large/jeremy-fenske-link-foresttemple.jpg?1486453970" alt="Link and the Forest Temple" title="Link and the Temple Forest by Jeremy Fenske">
+            <p> Image is by Jeremy Fenske. <a href= "https://www.artstation.com/artwork/nLY0K"> Here is a link to Fenske's artwork. </a></p><!--Mark's comment 7/9: This is a general nitpick since you didn't do anything technically wrong, but the ideal is to have text that is descriptive be the link. That way, when a screen reader tells someone the words in a link, it's more useful than "here." Recommendation is to make the anchor tag <a> encapsulate the whole sentence, though, even then it's not ideal since that sentence, taken out of context, doesn't let the user know who you mean by "his".-->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </body>
+
+</html>
