@@ -14,50 +14,28 @@ h1, h2, h3 {
     text-align:center;
     font-weight: bold;
 }
-/*Centering table*/
-table { 
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    width: 80%;
-}
-th {
-    font-size: 80%;
-    text-align: center;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    width: 60%;
-}
-td {
-    border-bottom: 1px solid black;
-    text-align: center;
-    width: 40%;
-}
-/*Changing id class background color*/
-tr {
-    column-span: 2;
-    font-size: 60%;
-    width: 40%;
-}
-#identified {
-    font-weight: bold;
-    font-size: large;
-    font-style: italic;
-}
-/*Centering lists*/
-ul, ol, li{
-    list-style-position: inside;
-    text-align: center;
+table {
+    align-items: center;
+    font-size:medium;
+    width: 30%;
+    height: 30%;
+    color:black
 }
 /*Changes colors when a link is hovered*/
 a:hover {
     color:orange;
 }
-#table1 {
-    width: auto;
+p {
+    text-align: center;
 }
 #image2 {
-    width: 25%;
-    height: 25%;
+    width: 10%;
+    height: 0%;
+}
+#title {
+    align-items: center;
+    font-size: large;
+}
+ol,ul,dl {
     align-items: center;
 }
