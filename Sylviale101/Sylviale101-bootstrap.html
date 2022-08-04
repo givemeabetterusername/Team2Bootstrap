@@ -3,8 +3,8 @@
 
 <head>
     <title>HTML practice page</title>
-    <!--Bootstrap Stuff-->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!--Bootstrap Stuff-->
     <!--Mark's comment 8/2: Move line 6 below line 7. You want to start global and go down to more and more local.-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -12,7 +12,6 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
 </head>
-
 <body>
     <!--Navbar-->
     <nav class="pl-md-8 navbar navbar-expand-md bg-dark navbar-dark sticky-top">
@@ -113,7 +112,7 @@
             <h2>Emphasizing Text</h2><!--Mark's comment 8/2: Generally, you want to stick with strong and em rather than b and i because you want to use HTML tags to tell the page what type of text it is and stylesheets to tell it how to render those types of text. Saying a text is strong lets the browser or stylesheet then treat it somehow, in this case bolding it. Using the b tag forces it to be a certain style but not what the type of the text is... Get it? b and i were deprecated about 20 years ago. They still work, but you shouldn't be using them anymore.-->
             <p>
                 Being able to emphasize text is nice. By being able to do so, I can use b to bold important text like
-                <b>this</b> or use <strong>strong</strong> instead.
+                <b>this</b> or use <strong>strong</strong> instead. But it is generally recommended to use strong and em instead.
                 I could also create italic text by using an i tag like <i>this</i>
             </p>
         </div>
@@ -146,7 +145,7 @@
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td>Bottom half of the table<!--Mark's comment 8/2: Missing a closing /td-->
+                        <td>Bottom half of the table</td><!--Mark's comment 8/2: Missing a closing /td-->
                     </tr>
                 </tbody>
             </table>
@@ -278,7 +277,8 @@
                 <p>
                     <b>Code Reference Credits to:</b> <a href="https://github.com/markdangerchen">Mark Chen</a>!
                 </p>
-            </div><!--Mark's comment 8/2: I just looked this up to clarify: The container class in bootstrap is mostly used as the main box that spans the whole width of the browser window and everything else goes into that box. It helps bootstrap take care of wrapping and stacking of elements when someone resizes their window. Therefore, it's generally not really needed to put containers within containers. You can put div elements in a container, but the div element itself doesn't need to be a container. That make sense? Also, there seems to be a missing /div here, but maybe it's because you have so many nested things that it was hard to keep track of. I reformatted the code's indents to make it easier to troubleshoot.-->
-</body>
 
+            </div><!--Mark's comment 8/2: I just looked this up to clarify: The container class in bootstrap is mostly used as the main box that spans the whole width of the browser window and everything else goes into that box. It helps bootstrap take care of wrapping and stacking of elements when someone resizes their window. Therefore, it's generally not really needed to put containers within containers. You can put div elements in a container, but the div element itself doesn't need to be a container. That make sense? Also, there seems to be a missing /div here, but maybe it's because you have so many nested things that it was hard to keep track of. I reformatted the code's indents to make it easier to troubleshoot.-->
+        </div>
+</body>
 </html>
