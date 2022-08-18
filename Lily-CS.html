@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"><!--Mark's comment 7/17: this file doesn't appear to exist.-->
+            <title> Quick guide for a future software developer</title>
+            <style type="text/css">
+
+                body {
+                    background-color: rgb(255, 209, 124);
+                    font-size:200%;
+                    text-align: center;
+                }
+
+                ul, ol, li {
+                   text-align: center;
+                   list-style-position: inside;
+                }
+
+                h4 {
+                    color: rgb(180, 38, 211);
+                }
+
+                h2 {
+                    color:rgba(114, 4, 103, 0.709);
+                    text-align: center;
+                    font-family: 'Times New Roman';
+                    font-size: 230%;
+                }
+
+                p.sharedHeader {
+                    color:blue /*Mark's comment 7/17: don't forget the ending semicolon! */
+                }
+
+                #myHeader {
+                    background-color: rgb(242, 101, 13);
+                    padding: 40px;
+
+                }
+
+                table, th, td {
+                    border:5px solid black;
+                    text-align: center;
+                    width: 50%;
+                    height: 70px;
+                    border-collapse: collapse;
+                }
+
+                table.center {
+                 margin-left: auto;
+                 margin-right: auto;
+                }
+
+                a:hover {
+                    color:rgb(254, 0, 0);
+                }
+            </style>
+        </head>
+<body>
+
+ <!-- Image information -->
+    <img src="Images/frontend.jpg" alt="Front end" width="600" height="350" title="Front and Back End Computer Science" > <!--Mark's comment 7/17: replace the width and height attributes with a stylesheet!--><!--Mark's comment 7/9: I'm not marking this down since it's CSS, but if you wanted the center class to make the image centered then in the style block in your head section, you should replace img with .center. Right now ALL images will be centered, not just the ones with the center class.-->
+
+    <h1 style="text-align:center;"> Computer Science.</h1>
+        <p>I will give you short information about career options</p>
+    <h2 id = "myHeader">Front End Development.</h2>
+        <p>
+            A front end developer is in charge of creating a efficient graphical user interface.
+            <br>
+            Probably you have run into <strong> facebook </strong> or <strong> instagram </strong>. Do you notice the design of the we application
+            well, a front end Dev is in charge of coding that design.
+        </p>
+
+        <p class="sharedHeader">
+            <strong style="font-size:140%;"><em>Basic skills needed</em></span> </strong><!--Mark's comment 7/17: missing an opening <span>-->
+        </p>
+
+<!-- Bulleted point list -->
+                 <ul>
+                     <li>
+                         <b>
+                             <i>HTML</i>
+                         </b>
+                     </li>
+
+                     <li>
+                         <b>
+                             <i>CSS</i>
+                         </b>
+                     </li>
+                     <li>
+                         <b><i>JavaScript</i></b>
+                     </li>
+                     <li>
+                         <b><i>Bootstrap</i></b>
+                     </li>
+                 </ul>
+<hr>
+    <h2 id="myHeader"> Back End Development.</h2> <!--Mark's comment 7/17: ids are unique. You can't have more than one element with the same id. Please rename or switch to class-->
+        <p>
+            A back end developer are the experts that build and maintain the mechanisms that process data.
+            <br>
+            They are involved in data storage, security, and other server-side functions.
+        </p>
+        <p class = "sharedHeader">
+            <b style="font-size:140%;"> <span><i>Basic skills needed</i></span> </b>
+        </p>
+
+<!-- Bulleted point list -->
+                 <ul>
+                     <li>
+                         <b>
+                             <i>Java</i>
+                         </b>
+                     </li>
+
+                     <li>
+                         <b>
+                             <i>Data Structures and Algorithm</i>
+                         </b>
+                     </li>
+                     <li>
+                         <b><i>Databases</i></b>
+                     </li>
+                     <li>
+                         <b><i>API's</i></b><br>
+                     </li>
+                 </ul>
+
+ <!-- Color highlighting text -->
+    <h2 style="background-color:rgb(242, 101, 13); font-size: 180%;">Job Options</h2>
+
+<!--Table information-->
+    <!-- Where table start -->
+        <table class="center" >
+          <tr>
+            <th>Company Name</th>
+            <th>Potential Salary</th>
+          </tr>
+          <tr>
+            <td><em>Microsoft</em></td>
+            <td>$85,300.00</td>
+          </tr>
+          <tr>
+            <td><em>Oracle</em></td>
+            <td>$90,567.00</td>
+          </tr>
+          <tr>
+            <td><em>Netflix</em></td>
+            <td>$90,435.00</td>
+          </tr>
+        </table>
+    <h4>Note:</h4>
+        <p>Networking is the best strategy for job hunt</p><br>
+    <h3>To expand your network do the following:</h3>
+
+<!-- Numbered list -->
+    <ol style="color: rgb(154, 9, 9)">
+        <!-- 1st element in the list -->
+        <li>
+            <b>
+                <i>Create a LinkedIn account</i>
+            </b>
+        </li>
+        <!-- 2nd element in the list -->
+        <li>
+            <b>
+                <i>Find any friends or classmates and send request on LinkedIn</i>
+            </b>
+        </li>
+        <!-- 3rd element in the list -->
+        <li>
+            <b>
+                <i>If you are in school sign up for internship</i>
+            </b>
+        </li>
+    </ol>
+    <h4>Note: For more information visit</h4>
+
+<!-- Link to a website -->
+    <a href=https://medium.datadriveninvestor.com/a-back-end-view-of-front-end-web-design-fb89a0a220ae><em>Front End and Back End Development</em></a><!--Mark's comment 7/17: attribute values should be in doublequotes. (The three big error messages could've been checked by looking at Problems in the debug panel before submitting.)-->
+    </body>
+</html>
